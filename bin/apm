@@ -62,7 +62,7 @@ function wrap(sp) {
 function printHelp() {
   console.log('  System Commands:'.to.bold.magenta.color);
   console.log();
-  console.log('    config         configuration for spm');
+  console.log('    config         configuration for apm');
   console.log('    login          login your account');
   console.log('    completion     output completion bash script');
   console.log();
@@ -82,7 +82,7 @@ function printHelp() {
 }
 
 function executable(subcmd) {
-  var file = join(__dirname, 'spm-' + subcmd);
+  var file = join(__dirname, 'apm-' + subcmd);
   if (exists(file)) {
     return file;
   }

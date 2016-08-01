@@ -3,5 +3,5 @@
 var readFile = require('fs').readFileSync;
 var join = require('path').join;
 
-var file = join(__dirname, '../scripts/.spm_completion');
+var file = join(__dirname, '../scripts/.apm_completion');
 console.log(readFile(file, 'utf-8'));

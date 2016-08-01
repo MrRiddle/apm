@@ -13,7 +13,7 @@
     "url": ""
   },
   "licenses": "MIT",
-  "spm": {
+  "apm": {
     "main": "index.js",
     "dependencies": {
     },
@@ -22,10 +22,10 @@
     }
   },
   "devDependencies": {
-    "spm": "3"
+    "apm": "1"
   },
   "scripts": {
-    "test": "spm test",
-    "build": "spm build"
+    "test": "apm test",
+    "build": "apm build"
   }
 }

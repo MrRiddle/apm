@@ -1,4 +1,4 @@
-# <%= name %> [![spm version](<%= yuanUrl %>/badge/<%= name %>)](<%= yuanUrl %>/package/<%= name %>)
+# <%= name %> [![apm version](<%= yuanUrl %>/badge/<%= name %>)](<%= yuanUrl %>/package/<%= name %>)
 
 ---
 
@@ -7,8 +7,11 @@
 ## Install
 
 ```
-$ spm install <%= name %> --save
+$ apm install <%= name %> --save
 ```
+
+## API
+[API desc]
 
 ## Usage
 

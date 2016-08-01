@@ -21,9 +21,9 @@ log.config(program);
 var cache = {};
 
 var p = exists('package.json') && readJSON('package.json');
-if (!p || !p.spm) {
+if (!p || !p.apm) {
   console.log();
-  log.error('miss', 'package.json or "spm" key');
+  log.error('miss', 'package.json or "apm" key');
   process.exit(1);
 }
 

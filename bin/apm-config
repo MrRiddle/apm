@@ -16,16 +16,16 @@ program
   .option('get <key>', 'get a key')
   .option('delete <key>', 'delete a key')
   .option('list', 'show your configuration')
-  .option('edit', 'edit ~/.spm/spmrc-3x with your favorite editor');
+  .option('edit', 'edit ~/.apm/apmrc with your favorite editor');
 
 program.on('--help', function() {
   console.log('  Examples:'.to.bold.blue.color);
   console.log();
-  console.log('    $', 'spm config'.to.magenta.color, 'set registry http://spm.alipay.im');
-  console.log('    $', 'spm config'.to.magenta.color, 'get registry');
-  console.log('    $', 'spm config'.to.magenta.color, 'delete auth');
-  console.log('    $', 'spm config'.to.magenta.color, 'list');
-  console.log('    $', 'spm config'.to.magenta.color, 'edit');
+  console.log('    $', 'apm config'.to.magenta.color, 'set registry http://apm.oa.com');
+  console.log('    $', 'apm config'.to.magenta.color, 'get registry');
+  console.log('    $', 'apm config'.to.magenta.color, 'delete auth');
+  console.log('    $', 'apm config'.to.magenta.color, 'list');
+  console.log('    $', 'apm config'.to.magenta.color, 'edit');
   console.log();
 });
 

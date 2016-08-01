@@ -1,27 +1,27 @@
 {
-  "name": "spm",
-  "version": "3.6.13-beta1",
+  "name": "apm",
+  "version": "0.9.0",
   "preferGlobal": "true",
   "description": "Static Package Manager",
   "author": "Hsiaoming Yang <me@lepture.com>",
-  "homepage": "http://spmjs.io",
+  "homepage": "http://apm.oa.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/spmjs/spm.git"
+    "url": "https://github.com/MrRiddle/apm.git"
   },
   "keywords": [
-    "bower",
-    "browser",
-    "cmd",
-    "command line",
-    "commonjs",
-    "component",
-    "module",
-    "npm",
-    "package",
     "seajs",
-    "spmjs",
-    "tool"
+      "module",
+      "cmd",
+      "legojs",
+      "package",
+      "tool",
+      "command line",
+      "commonjs",
+      "component",
+      "bower",
+      "npm",
+      "browser"
   ],
   "dependencies": {
     "archy": "~1.0.0",
@@ -81,12 +81,14 @@
     "sinon": "~1.12.1"
   },
   "bin": {
-    "spm": "bin/spm"
+    "apm": "bin/apm"
   },
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
     "test": "make test"
-  }
+  },
+  "readme": "apm",
+  "readmeFilename": "README.md"
 }

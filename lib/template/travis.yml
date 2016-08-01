@@ -4,13 +4,13 @@ node_js:
   - "0.11"
 
 install:
-  - npm install spm coveralls
+  - npm install apm coveralls
 
 before_script:
-  - node_modules/spm/bin/spm-install
+  - node_modules/apm/bin/apm-install
 
 script:
-  - node_modules/spm/bin/spm-test
+  - node_modules/apm/bin/apm-test
 
 after_success:
-  - node_modules/spm/bin/spm-test --coveralls | node_modules/.bin/coveralls
+  - node_modules/apm/bin/apm-test --coveralls | node_modules/.bin/coveralls

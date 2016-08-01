@@ -19,8 +19,8 @@ program
 program.on('--help', function() {
   console.log('  Examples:'.to.bold.blue.color);
   console.log();
-  console.log('    $ spm test');
-  console.log('    $ spm test --nocoverage');
+  console.log('    $ apm test');
+  console.log('    $ apm test --nocoverage');
   console.log();
 });
 
@@ -28,7 +28,7 @@ program.parse(process.argv);
 
 var pkg = exists('package.json') && readJSON('package.json');
 if (!pkg) {
-  log.error('miss', 'package.json or "spm" key');
+  log.error('miss', 'package.json or "apm" key');
   process.exit(2);
 }
 

@@ -1,7 +1,7 @@
 dist
 _site
 sea-modules
-spm_modules
+apm_modules
 node_modules
 .git
 tests

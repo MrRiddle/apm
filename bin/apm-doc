@@ -27,13 +27,13 @@ program
 program.on('--help', function() {
   console.log('  Examples:'.to.bold.blue.color);
   console.log();
-  console.log('    $', 'spm doc'.to.magenta.color + ' // alias of spm doc watch');
-  console.log('    $', 'spm doc'.to.magenta.color, 'build');
-  console.log('    $', 'spm doc'.to.magenta.color, 'build -f');
-  console.log('    $', 'spm doc'.to.magenta.color, 'watch');
-  console.log('    $', 'spm doc'.to.magenta.color, 'watch --port 8080');
-  console.log('    $', 'spm doc'.to.magenta.color, 'publish');
-  console.log('    $', 'spm doc'.to.magenta.color, 'publish -r http://spm.alipay.im');
+  console.log('    $', 'apm doc'.to.magenta.color + ' // alias of apm doc watch');
+  console.log('    $', 'apm doc'.to.magenta.color, 'build');
+  console.log('    $', 'apm doc'.to.magenta.color, 'build -f');
+  console.log('    $', 'apm doc'.to.magenta.color, 'watch');
+  console.log('    $', 'apm doc'.to.magenta.color, 'watch --port 8080');
+  console.log('    $', 'apm doc'.to.magenta.color, 'publish');
+  console.log('    $', 'apm doc'.to.magenta.color, 'publish -r http://apm.oa.com');
   console.log();
 });
 
@@ -42,9 +42,9 @@ program.parse(process.argv);
 log.config(program);
 
 var pkg = exists('package.json') && readJSON('package.json');
-if (!pkg || !pkg.spm) {
+if (!pkg || !pkg.apm) {
   console.log();
-  log.error('miss', 'package.json or "spm" key');
+  log.error('miss', 'package.json or "apm" key');
   process.exit(2);
 }
 

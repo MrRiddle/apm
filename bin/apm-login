@@ -41,7 +41,7 @@ inquirer.prompt([{
   name: 'username'
 }, {
   type: 'password',
-  message: 'authkey (copy from spmjs account page): ',
+  message: 'authkey (copy from apm account page): ',
   name: 'authkey'
 }], function(answers) {
   info.username = answers.username;

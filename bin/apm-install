@@ -11,7 +11,7 @@ program
   .usage('[options] name[@version]')
   .option('-r, --registry <url>', 'registry url of yuan server')
   .option('-I, --input-directory <dir>', 'input directory, default: current working directory')
-  .option('-O, --output-directory <dir>', 'output directory, default: spm_modules')
+  .option('-O, --output-directory <dir>', 'output directory, default: apm_modules')
   .option('-f, --force', 'force to download a unstable module')
   .option('-q, --quiet', 'show less logs')
   .option('-S, --save', 'save dependencies to package.json')
@@ -22,11 +22,11 @@ program
 program.on('--help', function() {
   console.log('  ' + 'Examples:'.to.bold.blue);
   console.log();
-  console.log('   $ ' + 'spm install'.to.magenta.color + ' jquery');
-  console.log('   $ ' + 'spm install'.to.magenta.color + ' jquery arale-class');
-  console.log('   $ ' + 'spm install'.to.magenta.color + ' jquery' +
+  console.log('   $ ' + 'apm install'.to.magenta.color + ' jquery');
+  console.log('   $ ' + 'apm install'.to.magenta.color + ' jquery arale-class');
+  console.log('   $ ' + 'apm install'.to.magenta.color + ' jquery' +
               '@1.8.2'.to.cyan.color);
-  console.log('   $ ' + 'spm install'.to.magenta.color + ' underscore --save');
+  console.log('   $ ' + 'apm install'.to.magenta.color + ' underscore --save');
   console.log();
 });
 

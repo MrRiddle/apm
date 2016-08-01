@@ -27,8 +27,8 @@ program
 program.on('--help', function() {
   console.log('  ' + 'Examples:'.to.bold.blue.color);
   console.log();
-  console.log('   $ ' + 'spm publish'.to.magenta.color);
-  console.log('   $ ' + 'spm publish'.to.magenta.color + ' -r'.to.cyan.color + ' http://spm.alipay.im');
+  console.log('   $ ' + 'apm publish'.to.magenta.color);
+  console.log('   $ ' + 'apm publish'.to.magenta.color + ' -r'.to.cyan.color + ' http://apm.oa.com');
   console.log();
 });
 
@@ -38,14 +38,14 @@ console.log();
 log.config(program);
 
 var pkg = exists('package.json') && readJSON('package.json');
-if (!pkg || !pkg.spm) {
+if (!pkg || !pkg.apm) {
   console.log();
-  log.error('miss', 'package.json or "spm" key');
+  log.error('miss', 'package.json or "apm" key');
   process.exit(2);
 }
 
 log.info('publish', (pkg.name + '@' + pkg.version).to.magenta.color);
-hook(pkg.spm.scripts || {}, 'publish', function(done) {
+hook(pkg.apm.scripts || {}, 'publish', function(done) {
   publish({
     cwd: program.inputDirectory,
     tag: program.tag,
@@ -60,7 +60,7 @@ hook(pkg.spm.scripts || {}, 'publish', function(done) {
     done();
   }, function(err) {
     if (err.statusCode === 401) {
-      log.error('exit', 'authorization is required. try `spm login`');
+      log.error('exit', 'authorization is required. try `apm login`');
     } else {
       log.error('exit', err.message);
     }

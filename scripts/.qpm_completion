@@ -1,7 +1,7 @@
 #
-# spm command completion script
+# apm command completion script
 #
-# Installation: spm completion >> ~/.bashrc  (or ~/.zshrc)
+# Installation: apm completion >> ~/.bashrc  (or ~/.zshrc)
 #
 
 CMD="config help info tree login search unpublish publish install build init test doc completion"
@@ -11,8 +11,8 @@ CMDARRAY=(config help info tree login search unpublish publish install build ini
 type compctl > /dev/null 2>&1 && compctl -k CMDARRAY spm 
 
 # bash
-_spm_completion() {
+_apm_completion() {
   local word=${COMP_WORDS[COMP_CWORD]}
   COMPREPLY=($(compgen -W "$CMD" -- "${word}"))
 }
-type complete > /dev/null 2>&1 && complete -F _spm_completion spm
+type complete > /dev/null 2>&1 && complete -F _apm_completion apm

@@ -5,7 +5,7 @@ var tar = require('../lib/utils/tar');
 
 describe('tar', function() {
 
-  it('ignore field in package.spm', function(done) {
+  it('ignore field in package.apm', function(done) {
     tar.create(path.join(__dirname, './fixtures/tar-ignore'),
                path.join(__dirname, './fixtures/tar-ignore.tar.gz'),
                function(error, target) {

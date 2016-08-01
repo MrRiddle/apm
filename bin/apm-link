@@ -16,7 +16,7 @@ program.usage('<pkg>');
 program.on('--help', function() {
   console.log('  Examples:'.to.bold.blue.color);
   console.log();
-  console.log('    $', 'spm link'.to.magenta.color, '/path/to/other/pkg');
+  console.log('    $', 'apm link'.to.magenta.color, '/path/to/other/pkg');
   console.log();
 });
 
@@ -35,9 +35,9 @@ if (exists(join(dir, 'package.json'))) {
   pkg = readJSON(join(dir, 'package.json'));
 }
 
-if (!pkg || !pkg.spm) {
+if (!pkg || !pkg.apm) {
   console.log();
-  log.error('miss', 'package.json or "spm" key');
+  log.error('miss', 'package.json or "apm" key');
   process.exit(1);
 }
 
